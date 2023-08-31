@@ -1,0 +1,92 @@
+/* para mobile */
+body{
+    background-image: url("https://i.pinimg.com/564x/3f/e4/22/3fe4228c04e4408288fe4ef38e9b5f30.jpg");
+}
+*{
+    font-family: monospace;
+    max-width: 100%;
+    
+}
+h1{
+    font-size: 25px;
+    
+}
+ul{
+    padding:0;
+    
+}
+ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-left: 12px;
+   
+}
+
+.nav-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        backdrop-filter: blur(7px);
+        padding: 10px 20px
+    }
+.nav-bar{
+    padding: 5px 20px;
+   
+}
+.nav-toggle{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    background-color: #a37d7dc0;
+}
+
+.show-links{
+    height:100vh;
+
+}
+
+@media only screen and (min-width: 700px){
+    .nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+    box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.101);
+    backdrop-filter: blur(7px);
+}
+    .nav-toggle{
+    display: none;
+}
+    ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    
+}  
+.links{
+    /* es importante el height AUTO porque sino hay un desbordamiento interno */
+    height: auto;
+    background-color: transparent;
+    transition: 0s;
+} 
+ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+} 
+h1:hover{
+    color:#a37d7dc0
+}
+}
+
+
